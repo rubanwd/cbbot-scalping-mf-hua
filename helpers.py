@@ -11,17 +11,17 @@ class Helpers:
         df['Bollinger_upper'], df['Bollinger_middle'], df['Bollinger_lower'] = indicators.calculate_bollinger_bands(df)
 
         # Get the latest indicator values
-        # rsi = df['RSI'].iloc[-1]
-        # bollinger_upper = df['Bollinger_upper'].iloc[-1]
-        # bollinger_middle = df['Bollinger_middle'].iloc[-1]
-        # bollinger_lower = df['Bollinger_lower'].iloc[-1]
+        rsi = df['RSI'].iloc[-1]
+        bollinger_upper = df['Bollinger_upper'].iloc[-1]
+        bollinger_middle = df['Bollinger_middle'].iloc[-1]
+        bollinger_lower = df['Bollinger_lower'].iloc[-1]
         current_price = df['close'].iloc[-1]
 
         # Print the indicator values
-        print(f"RSI: {rsi:.2f}")
-        print(f"Bollinger Upper: {bollinger_upper:.2f}")
-        print(f"Bollinger Middle: {bollinger_middle:.2f}")
-        print(f"Bollinger Lower: {bollinger_lower:.2f}")
+        # print(f"RSI: {rsi:.2f}")
+        # print(f"Bollinger Upper: {bollinger_upper:.2f}")
+        # print(f"Bollinger Middle: {bollinger_middle:.2f}")
+        # print(f"Bollinger Lower: {bollinger_lower:.2f}")
         print(f"Current Price: {current_price:.2f}")
 
         # Return the calculated indicators and price
